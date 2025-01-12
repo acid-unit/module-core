@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Acid Unit (https://acid.7prism.com). All rights reserved.
+ * See LICENSE file for license details.
+ */
+-->
+
+<!--suppress PluginDeclarationInspection -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Framework\Controller\ResultInterface">
+        <plugin name="result-builtin-cache" sortOrder="20"/>
+        <plugin name="result-varnish-cache" sortOrder="20"/>
+
+        <plugin name="acid_update_page_content"
+                type="AcidUnit\PageContentUpdate\Plugin\UpdatePageContent"
+                sortOrder="10"
+        />
+    </type>
+</config>

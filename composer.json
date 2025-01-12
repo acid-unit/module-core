@@ -1,0 +1,21 @@
+{
+    "name": "acid-unit/module-page-content-update",
+    "version": "0.1.0",
+    "description": "Page Content Update Magento 2 module",
+    "type": "magento2-module",
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": ">=103.0.4",
+        "magento/module-page-cache": "*",
+        "magento/module-graph-ql-cache": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "AcidUnit\\PageContentUpdate\\": ""
+        }
+    },
+    "license": "OSL-3.0"
+}
