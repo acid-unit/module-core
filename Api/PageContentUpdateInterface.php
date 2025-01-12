@@ -9,14 +9,14 @@ namespace AcidUnit\PageContentUpdate\Api;
 interface PageContentUpdateInterface
 {
     /**
-     * Placeholder is rendered in the .phtml template which gets replaced by the content
+     * Placeholder is rendered in the .phtml template in the middle of page render
      *
      * @return string
      */
     public function getPlaceholder(): string;
 
     /**
-     * Get content
+     * Content replaces the placeholder after full page is rendered
      *
      * @return string
      */

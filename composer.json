@@ -1,7 +1,7 @@
 {
     "name": "acid-unit/module-page-content-update",
-    "version": "0.1.0",
-    "description": "Page Content Update Magento 2 module",
+    "version": "0.1.1",
+    "description": "Page content update provider for [\uD83E\uDDEAAcid Unit] extensions",
     "type": "magento2-module",
     "require": {
         "php": ">=8.1",
