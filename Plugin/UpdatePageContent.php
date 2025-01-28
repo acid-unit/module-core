@@ -4,13 +4,15 @@
  * See LICENSE file for license details.
  */
 
+/** @noinspection PhpClassCanBeReadonlyInspection */
+
 declare(strict_types=1);
 
-namespace AcidUnit\PageContentUpdate\Plugin;
+namespace AcidUnit\Core\Plugin;
 
 use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultInterface;
-use AcidUnit\PageContentUpdate\Model\PageContentUpdateProcessor;
+use AcidUnit\Core\Model\PageContentUpdateProcessor;
 
 class UpdatePageContent
 {

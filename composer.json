@@ -1,20 +1,20 @@
 {
-    "name": "acid-unit/module-page-content-update",
-    "version": "0.1.1",
-    "description": "Page content update provider for [\uD83E\uDDEAAcid Unit] extensions",
+    "name": "acid-unit/module-core",
+    "version": "0.1.2",
+    "description": "Core module for [\uD83E\uDDEAAcid Unit] extensions",
     "type": "magento2-module",
     "require": {
-        "php": ">=8.1",
         "magento/framework": ">=103.0.4",
+        "magento/module-graph-ql-cache": "*",
         "magento/module-page-cache": "*",
-        "magento/module-graph-ql-cache": "*"
+        "php": ">=8.1"
     },
     "autoload": {
         "files": [
             "registration.php"
         ],
         "psr-4": {
-            "AcidUnit\\PageContentUpdate\\": ""
+            "AcidUnit\\Core\\": ""
         }
     },
     "license": "OSL-3.0"

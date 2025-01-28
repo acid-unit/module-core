@@ -15,7 +15,7 @@
         <plugin name="result-varnish-cache" sortOrder="20"/>
 
         <plugin name="acid_update_page_content"
-                type="AcidUnit\PageContentUpdate\Plugin\UpdatePageContent"
+                type="AcidUnit\Core\Plugin\UpdatePageContent"
                 sortOrder="10"
         />
     </type>

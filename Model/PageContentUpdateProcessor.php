@@ -6,9 +6,9 @@
 
 declare(strict_types=1);
 
-namespace AcidUnit\PageContentUpdate\Model;
+namespace AcidUnit\Core\Model;
 
-use AcidUnit\PageContentUpdate\Api\PageContentUpdateInterface;
+use AcidUnit\Core\Api\PageContentUpdateInterface;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 
 class PageContentUpdateProcessor implements ArgumentInterface

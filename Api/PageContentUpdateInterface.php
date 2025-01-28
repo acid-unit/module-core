@@ -4,8 +4,15 @@
  * See LICENSE file for license details.
  */
 
-namespace AcidUnit\PageContentUpdate\Api;
+declare(strict_types=1);
 
+namespace AcidUnit\Core\Api;
+
+/**
+ * Interface for page content handlers
+ *
+ * @api
+ */
 interface PageContentUpdateInterface
 {
     /**
