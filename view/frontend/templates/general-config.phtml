@@ -1,0 +1,24 @@
+<?php
+/**
+ * Copyright © Acid Unit (https://acid.7prism.com). All rights reserved.
+ * See LICENSE file for license details.
+ */
+
+/** @noinspection PhpUndefinedMethodInspection */
+
+use AcidUnit\Core\ViewModel\ConfigProvider;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Helper\SecureHtmlRenderer;
+
+/**
+ * @var ConfigProvider $configProvider
+ * @var Template $block
+ * @var SecureHtmlRenderer $secureRenderer
+ */
+
+$configProvider = $block->getConfigProvider(); // @phpstan-ignore-line
+$generalConfig = $configProvider->getSerializedCustomConfig();
+$scriptString = "window.acidGeneralConfig = $generalConfig;";
+?>
+
+<?= /* @noEscape */ $secureRenderer->renderTag('script', [], $scriptString, false) ?>

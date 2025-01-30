@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Acid Unit (https://acid.7prism.com). All rights reserved.
+ * See LICENSE file for license details.
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <block name="acid_general_config"
+                   after="acid_general_body"
+                   template="AcidUnit_Core::general-config.phtml">
+                <arguments>
+                    <argument name="config_provider" xsi:type="object">AcidUnit\Core\ViewModel\ConfigProvider</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
