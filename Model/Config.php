@@ -4,26 +4,22 @@
  * See LICENSE file for license details.
  */
 
-/** @noinspection PhpPluralMixedCanBeReplacedWithArrayInspection */
+/** @noinspection PhpClassCanBeReadonlyInspection */
 
 declare(strict_types=1);
 
 namespace AcidUnit\Core\Model;
 
 use Magento\Directory\Model\Currency;
-use Magento\Framework\DataObject;
 
-class Config extends DataObject
+class Config
 {
     /**
      * @param Currency $currency
-     * @param array<mixed> $data
      */
     public function __construct(
-        private readonly Currency $currency,
-        array                     $data = []
+        private readonly Currency $currency
     ) {
-        parent::__construct($data);
     }
 
     /**
