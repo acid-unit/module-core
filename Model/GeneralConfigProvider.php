@@ -32,7 +32,10 @@ class GeneralConfigProvider implements ConfigProviderInterface
     public function getConfig(): array
     {
         return [
-            'currency_symbol' => $this->config->getCurrencySymbol()
+            'currency' => [
+                'symbol' => $this->config->getCurrencySymbol(),
+                'code' => $this->config->getBaseCurrencyCode()
+            ]
         ];
     }
 }
