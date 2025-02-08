@@ -1,6 +1,6 @@
 {
     "name": "acid-unit/module-core",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Core module for [\uD83E\uDDEAAcid Unit] extensions",
     "type": "magento2-module",
     "require": {
