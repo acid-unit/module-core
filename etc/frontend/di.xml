@@ -20,10 +20,11 @@
         />
     </type>
 
+    <!-- Interface overriding 👇 -->
     <type name="AcidUnit\Core\ViewModel\ConfigProvider">
         <arguments>
-            <!-- dependency on implementation -->
             <argument name="configProvider" xsi:type="object">AcidUnit\Core\Model\GeneralConfigProvider</argument>
         </arguments>
     </type>
+    <!-- Interface overriding 👆 -->
 </config>
