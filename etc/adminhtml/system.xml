@@ -11,7 +11,7 @@
     <system>
         <tab id="acid_unit"
              translate="label"
-             sortOrder="1000">
+             sortOrder="9000">
             <label>Acid Unit</label>
         </tab>
 
