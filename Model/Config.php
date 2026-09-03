@@ -33,10 +33,20 @@ class Config
      * Get currency symbol
      *
      * @return string
+     * @noinspection PhpCastIsUnnecessaryInspection
      */
     public function getCurrencySymbol(): string
     {
-        return $this->currency->getCurrencySymbol();
+        $symbol = '';
+
+        try {
+            $store = $this->storeManager->getStore();
+            $symbol = (string)$store->getBaseCurrency()->getCurrencySymbol(); // @phpstan-ignore-line
+        } catch (NoSuchEntityException $e) {
+            $this->logger->critical($e->getMessage());
+        }
+
+        return $symbol;
     }
 
     /**
@@ -49,7 +59,8 @@ class Config
         $code = '';
 
         try {
-            $code = $this->storeManager->getStore()->getBaseCurrencyCode(); // @phpstan-ignore-line
+            $store = $this->storeManager->getStore();
+            $code = (string)$store->getBaseCurrencyCode(); // @phpstan-ignore-line
         } catch (NoSuchEntityException $e) {
             $this->logger->critical($e->getMessage());
         }
