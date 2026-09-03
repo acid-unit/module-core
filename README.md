@@ -14,4 +14,4 @@ composer require acid-unit/module-core
 ✅ **Compatible with**: Magento Open Source & Adobe Commerce `>=2.4.4`  
 ✅ Requires `PHP 8.1+`
 
-<small>🛠 **Tested on** Magento Open Source `2.4.9` with `PHP 8.4`</small>
+<small>🛠 **Tested on** Magento Open Source `2.4.9` with `PHP 8.5`</small>
